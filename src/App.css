@@ -1,0 +1,96 @@
+/* Genel sayfa stili */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Ana kapsayıcı */
+  .container {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Header */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #007bff;
+    color: white;
+    padding: 15px;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  header h1 {
+    margin: 0;
+  }
+  
+  /* Butonlar */
+  button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Form */
+  form {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+  }
+  
+  input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Mesaj Stilleri */
+  .message {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 10px;
+  }
+  
+  .message img {
+    width: 40px;
+    height: 40px;ZZZZZZZZZZYYYYYYYYYYYYYYYYYYYYYYYYYYYYY
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .message .text {
+    max-width: 70%;
+    padding: 10px;
+    border-radius: 8px;
+  }
+  
+  .sent {
+    justify-content: flex-end;
+  }
+  
+  .sent .text {
+    background-color: #d4edda;
+    color: #155724;
+    align-self: flex-end;
+  }
+  
+  .received .text {
+    background-color: #e9ecef;
+    color: #333;
+  }
