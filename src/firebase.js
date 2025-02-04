@@ -13,7 +13,9 @@ const firebaseConfig = {
 };
 
 // Firebase konfigürasyonu yazdırarak kontrol edelim
-console.log("Firebase Config: ", firebaseConfig);
+console.log('Firebase yapılandırması:', firebaseConfig);
+console.log('Firebase app durumu:', app);
+
 
 const app = initializeApp(firebaseConfig);
 export const auth = getAuth(app);
