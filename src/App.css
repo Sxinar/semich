@@ -17,7 +17,7 @@ body {
 /* Ana kapsayıcı */
 .container {
     width: 100%;
-    max-width: 90%; /* 500px yerine daha esnek bir genişlik */
+    max-width: 90%; /* Daha esnek genişlik */
     margin: 0 auto;
     background: white;
     padding: 20px;
@@ -48,6 +48,8 @@ button {
     padding: 10px;
     cursor: pointer;
     border-radius: 5px;
+    width: 100%; /* Butonları tam genişlikte yapmak */
+    margin-top: 10px;
 }
 
 button:hover {
@@ -57,6 +59,7 @@ button:hover {
 /* Form */
 form {
     display: flex;
+    flex-direction: column; /* Butonları alt alta yerleştir */
     gap: 10px;
     margin-top: 15px;
 }
@@ -110,11 +113,12 @@ input {
     }
 
     form {
-        flex-direction: column; /* Form öğeleri alt alta dizilecek */
+        flex-direction: column; /* Butonlar alt alta gelecek */
+        gap: 15px;
     }
 
     input {
-        width: 100%; /* Input elemanları daha geniş olacak */
+        width: 100%;
         margin-bottom: 10px;
     }
 
@@ -124,10 +128,14 @@ input {
     }
 
     .message img {
-        margin-bottom: 10px; /* Resimler için alt boşluk ekleyebilirsin */
+        margin-bottom: 10px;
     }
 
     .message .text {
-        max-width: 100%; /* Mesajlar tam genişlikte olacak */
+        max-width: 100%;
+    }
+
+    button {
+        padding: 12px; /* Buton boyutunu biraz daha büyüt */
     }
 }
