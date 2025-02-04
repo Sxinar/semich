@@ -1,16 +1,16 @@
-// src/firebase.js
 import { initializeApp } from "firebase/app";
 import { getAuth, GoogleAuthProvider } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 
+// Vercel'deki çevresel değişkenlerden Firebase yapılandırmasını al
 const firebaseConfig = {
-      apiKey: "AIzaSyAvV6ssnLI5sKW3VdmLPyar9JYoT3k7ecw",
-        authDomain: "chatik-843ff.firebaseapp.com",
-          projectId: "chatik-843ff",
-            storageBucket: "chatik-843ff.firebasestorage.app",
-              messagingSenderId: "217834909904",
-                appId: "1:217834909904:web:db2b5527f05e51fe3c6ed5"
-                };
+  apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
+  authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID,
+};
 
 const app = initializeApp(firebaseConfig);
 export const auth = getAuth(app);
